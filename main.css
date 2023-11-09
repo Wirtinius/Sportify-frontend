@@ -1,0 +1,49 @@
+
+
+
+#navbario {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-nav .nav-item {
+    padding: 10px 15px;
+}
+
+
+.logo-normal {
+
+}
+
+.logo-scrolled {
+
+}
+
+/* .intro {
+    padding-top: 450px;
+    background-image: url('src/images/360_F_256179223_FDWWNhqs8afJPs2W0iUUptiFXte4K8gP.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    overscroll-behavior: none; 
+} */
+
+
+.about-us-section {
+    background-color: #333; /* Dark Gray */
+    color: #fff;
+    padding: 100px 0;
+}
+
+.about-us-content {
+    text-align: center;
+}
+
+.about-us-content h2 {
+    color: #8B0000; /* Dark Red for headings */
+}
+
+.about-us-content p {
+    font-size: 18px;
+}
+
