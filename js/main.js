@@ -35,14 +35,14 @@ atHome.addEventListener("keypress", function (event) {
 })
 
 
-// 
-// var footer = document.querySelector('.alen');
 
-// footer.addEventListener("mouseover", function (event) {
-//       event.target.style.color = "orange";  
-//       setTimeout(() => {
-//         event.target.style.color = "";
-//       }, 500);
-//     },
-//     false,
-//   );
+var footer = document.querySelector('.alen');
+
+footer.addEventListener("mouseover", function (event) {
+      event.target.style.color = "orange";  
+      setTimeout(() => {
+        event.target.style.color = "";
+      }, 500);
+    },
+    false,
+  );

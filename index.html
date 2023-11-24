@@ -65,8 +65,9 @@
                                 <a href="story.html" class="nav-item nav-link">Story</a>
                                 <a href="shop.html" class="nav-item nav-link">Shop</a>
                             </div>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Join Us</a>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Join Us</a>
                         </div>
+
                     </nav>
                 </div>
             </div>
@@ -82,7 +83,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase">Best Workout Platform</h5>
                             <h1 class="display-2 text-white text-uppercase mb-md-4">Build Your Body Strong Sportify</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Join Us</a>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Join Us</a>
                         </div>
                     </div>
                 </div>
@@ -92,7 +93,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase">Best Workout Platform</h5>
                             <h1 class="display-2 text-white text-uppercase mb-md-4">Grow Your Strength With Our Trainings</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Join Us</a>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Join Us</a>
                             <a href="" class="btn btn-light py-md-3 px-md-5">Contact Us</a>
                         </div>
                     </div>
@@ -110,10 +111,7 @@
             </button>
         </div>
     </div>
-    <!-- Carousel End -->
 
-
-    <!-- About Start -->
     <div class="container-fluid p-5">
         <div class="row gx-5">
             <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
@@ -325,6 +323,33 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Join Us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Email:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+            </div>
         </div>
     </div>
 
