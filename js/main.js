@@ -1,40 +1,48 @@
-(function ($) {
-    "use strict";
+// Back-to-top button
+window.addEventListener("scroll", function () {
+    var backToTopButton = document.querySelector('.back-to-top');
+    if (window.scrollY > 100) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
 
-    $(document).ready(function () {
-        function toggleNavbarMethod() {
-            if ($(window).width() > 992) {
-                $('.navbar .dropdown').on('mouseover', function () {
-                    $('.dropdown-toggle', this).trigger('click');
-                    playSound(); // Call playSound when mouse is over the dropdown
-                }).on('mouseout', function () {
-                    $('.dropdown-toggle', this).trigger('click').blur();
-                });
-            } else {
-                $('.navbar .dropdown').off('mouseover').off('mouseout');
-            }
-        }
+var backToTopButton = document.querySelector('.back-to-top');
+backToTopButton.addEventListener("click", function () {
+    var scrollOptions = {
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    };
 
-        toggleNavbarMethod();
-        $(window).resize(toggleNavbarMethod);
-    });
-    
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
+    window.scrollTo(scrollOptions);
+});
 
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
 
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
-    });
+// audio 
+var atHome = document.querySelector('.sound');
+var audio = new Audio('audio/Survivor - Eye Of The Tiger_(muzfan.net).mp3');
 
-})(jQuery);
+atHome.addEventListener("click", function () {
+    audio.play();
+})
+
+atHome.addEventListener("keypress", function (event) {
+    if (event.key === "p") {
+        audio.pause();
+    }
+})
+
+
+// 
+// var footer = document.querySelector('.alen');
+
+// footer.addEventListener("mouseover", function (event) {
+//       event.target.style.color = "orange";  
+//       setTimeout(() => {
+//         event.target.style.color = "";
+//       }, 500);
+//     },
+//     false,
+//   );
